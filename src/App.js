@@ -1,4 +1,5 @@
 import React from "react";
+import { ToastContainer } from 'react-toastify';
 import { PersistGate } from 'redux-persist/integration/react';
 import { Router } from "react-router-dom";
 import { Provider } from 'react-redux';
@@ -19,6 +20,17 @@ function App() {
       <Router history={history}>
           <Routes />
           <GlobalStyle />
+          <ToastContainer
+            position="bottom-center"
+            autoClose={5000}
+            hideProgressBar
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnVisibilityChange
+            draggable
+            pauseOnHover
+            />
         </Router>
       </PersistGate>
     </Provider>
