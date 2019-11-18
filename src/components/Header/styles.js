@@ -18,7 +18,6 @@ export const Content = styled.div`
     display: flex;
     align-items: center;
   
-
   img {
     height: 50px;
     width: 65px;
@@ -32,6 +31,11 @@ export const Content = styled.div`
     color: #7159c1;
   }
 }
+
+  aside {
+    display: flex;
+    align-items: center;
+  }
 `;
 
 
@@ -55,4 +59,3 @@ export const Profile = styled.div`
       border-radius: 50%;
     }
 `;
-

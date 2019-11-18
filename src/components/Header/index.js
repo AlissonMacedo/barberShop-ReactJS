@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import logo from '../../assets/login/logo-barbershop-header.png'
 import { Container, Content, Profile } from './styles';
 
+import Notifications from '../Notifications';
+
 export default function Header() {
   return (
    <Container>
@@ -14,6 +16,7 @@ export default function Header() {
        </nav>
 
        <aside>
+         <Notifications />
          <Profile>
            <div>
              <strong>Alisson Macedo</strong>
