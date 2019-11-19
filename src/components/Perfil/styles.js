@@ -7,9 +7,10 @@ export const Container = styled.div`
   width: 65%;
   min-width: 300px;
   height: 95%;
+  min-height: 400px;
   background-color: #fff;
   border-radius: 4px;
-  box-shadow: 0px 0px 5px #333;
+  box-shadow: 2px 4px 10px 3px #ddd;
 
   div {
     display: flex;
@@ -62,6 +63,8 @@ export const Container = styled.div`
     border: 0;
     border-radius: 4px;
     font-size: 16px;
+    box-shadow: 2px 4px 10px 3px #ddd;
+
     transition: background 0.2s;
     &:hover {
       background: ${darken(0.03, "#3b9eff")};

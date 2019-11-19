@@ -1,7 +1,13 @@
 import React from "react";
 
+import Indicadores from "../Indicadores";
 import { Container } from "./styles";
 
 export default function Home() {
-  return <h1>Home</h1>;
+  return (
+    <>
+      <Indicadores />
+      <h1>Dashboard</h1>
+    </>
+  );
 }

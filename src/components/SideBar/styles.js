@@ -26,7 +26,7 @@ export const Div = styled.div`
 
   a {
     cursor: pointer;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
     color: ${props => (!props.active ? "#ddd" : "#000")};
     font-weight: bold;
