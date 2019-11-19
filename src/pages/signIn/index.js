@@ -1,5 +1,5 @@
 import React from "react";
-import { useDispatch,useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { Form, Input } from "@rocketseat/unform";
 import logo from "../../assets/login/barbershop.png";
@@ -19,7 +19,7 @@ export default function SignIn() {
   const loading = useSelector(state => state.auth.loading);
 
   function handleSubmit({ email, password }) {
-    dispatch(signInRequest(email, password))
+    dispatch(signInRequest(email, password));
   }
 
   return (
@@ -33,12 +33,10 @@ export default function SignIn() {
           />
           <Input name="email" type="email" placeholder="Seu e-mail" />
           <Input name="password" type="password" placeholder="Sua senha" />
-          <button>{ loading ? 'Carregando' : 'Acessar'}</button>
+          <button>{loading ? "Carregando" : "Acessar"}</button>
           <Link to="/signUp">Criar uma conta gratuita</Link>
         </Form>
       </div>
     </>
   );
 }
-
-

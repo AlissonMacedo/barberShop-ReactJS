@@ -26,10 +26,8 @@ export const NotificationList = styled.div`
     height: 0;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
-    border-bottom: 20px solid rgba(0, 0, 0, 0.6);
-    
+    border-bottom: 20px solid rgba(0, 0, 0, 0.6); 
   }
-
 `;
 
 export const Notification = styled.div`
@@ -97,5 +95,4 @@ export const Badge = styled.button`
     }
   `}
 `;
-
 
