@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 
 import { Container, Content } from "./styles";
 import SideBar from "../../components/SideBar";
-import Perfil from "../../components/Perfil";
+import Profile from "../../components/Profile";
 import Home from "../../components/Home";
 import Agendamento from "../../components/Agendamento";
 
@@ -17,7 +17,7 @@ function Dashboard() {
       case "Home":
         return <Home />;
       case "Perfil":
-        return <Perfil />;
+        return <Profile />;
       case "Agendamento":
         return <Agendamento />;
       default:

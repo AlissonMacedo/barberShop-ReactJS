@@ -1,4 +1,4 @@
-import producer from "immer";
+import produce from "immer";
 
 const INITIAL_STATE = {
   profile: null,
@@ -6,16 +6,21 @@ const INITIAL_STATE = {
 };
 
 export default function user(state = INITIAL_STATE, action) {
-  switch (action.type) {
-    case "@auth/SIGN_IN_SUCCESS":
-      return producer(state, draft => {
+  return produce(state, draft => {
+    switch (action.type) {
+      case "@auth/SIGN_IN_SUCCESS": {
         draft.profile = action.payload.user;
-      });
-    case "@user/MOSTRA_HOME":
-      return producer(state, draft => {
+        break;
+      }
+      case "@user/UPDATE_PROFILE_SUCCESS": {
+        draft.profile = action.payload.profile;
+        break;
+      }
+      case "@user/MOSTRA_HOME": {
         draft.dashboard = action.payload.value;
-      });
-    default:
-      return state;
-  }
+        break;
+      }
+      default:
+    }
+  });
 }
