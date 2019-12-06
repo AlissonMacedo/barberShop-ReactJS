@@ -6,7 +6,7 @@ import { Container, Content } from "./styles";
 import SideBar from "../../components/SideBar";
 import Profile from "../../components/Profile";
 import Home from "../../components/Home";
-import Agendamento from "../../components/Agendamento";
+import Agendamento from "../../components/Agendaments";
 
 function Dashboard() {
   const dashboard = useSelector(state => state.user.dashboard);
