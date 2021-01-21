@@ -11,7 +11,7 @@
     "eslint-config-react-app": "^5.0.2",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
-    "immer": "^5.0.0",
+    "immer": "^8.0.1",
     "polished": "^3.4.2",
     "prop-types": "^15.7.2",
     "react": "^16.11.0",
